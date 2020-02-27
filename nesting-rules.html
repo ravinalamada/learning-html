@@ -1,101 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>
-    The nesting rules page
-  </title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>
+      The nesting rules page
+    </title>
+  </head>
 
-<body>
-  <header>
-    <h1>
-      The nesting rules of html
-    </h1>
-    <p>
-      Nested rules are clever about handling selector lists (that is, comma-separated selectors). Each complex selector
-      (the ones between the commas) is nested separately, and then they're combined back into a selector list.
-    </p>
-  </header>
-  <main>
-    <p>
-      These are the rules, which you need to follow :
-    </p>
-    <ul>
-      <li>
-        All tags must be nested properly
-      </li>
-      <li>
-        If you insert other tags, close them in reverse order.
-      </li>
-      <li>
-        Indent the child elements
-      </li>
-      <li>
-        Every start tag needs to be ended.
-      </li>
-      <li>
-        You can't have end tag without start tag.
-      </li>
-    </ul>
-    <p>
-      <q><strong>Don't do this!</strong></q>
+  <body>
+    <header>
+      <h1>
+        The nesting rules of html
+      </h1>
+      <p>
+        Nested rules are clever about handling selector lists (that is, comma-separated selectors). Each complex selector
+        (the ones between the commas) is nested separately, and then they're combined back into a selector list.
+      </p>
+    </header>
+    <main>
+      <p>
+        These are the rules, which you need to follow :
+      </p>
+      <ul>
+        <li>
+          All tags must be nested properly
+        </li>
+        <li>
+          If you insert other tags, close them in reverse order.
+        </li>
+        <li>
+          Indent the child elements
+        </li>
+        <li>
+          Every start tag needs to be ended.
+        </li>
+        <li>
+          You can't have end tag without start tag.
+        </li>
+      </ul>
+      <p>
+        <q><strong>Don't do this!</strong></q>
+      </p>  
       <pre>
-          &lt;nav&gt;
-          &lt;ul&gt;&lt;li&gt; &lt;a src="url"&gt; email me &lt;/li&gt;&lt;/a&gt;
-          &lt;li&gt;&lt;a src="url"&gt; facebook &lt;/li&gt;&lt;/a&gt;
-          &lt;li&gt;&lt;a src="url" older post &lt;/li&gt;&lt;/a&gt;
-          &lt;/nav&gt;
-        </pre>
+        &lt;nav&gt;
+        &lt;ul&gt;&lt;li&gt; &lt;a src="url"&gt; email me &lt;/li&gt;&lt;/a&gt;
+        &lt;li&gt;&lt;a src="url"&gt; facebook &lt;/li&gt;&lt;/a&gt;
+        &lt;li&gt;&lt;a src="url" older post &lt;/li&gt;&lt;/a&gt;
+        &lt;/nav&gt;
+      </pre>
       <p>
         <q><strong>Do this instead!</strong></q>
-        <pre>
-          &lt;nav&gt;
-            &lt;ul&gt;           
-              &lt;li&gt;
-                &lt;a src="url"&gt;
-                 email me
-                &lt;/a&gt;
-              &lt;li&gt;
-                &lt;a src="url"
-                  Facebook
-                &lt;/a&gt;
-              &lt;/li&gt;
-              &lt;li&gt;
-                &lt;a src="url" 
-                Older post
-                &lt;/a&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;nav&gt;            
+      </p>  
+      <pre>
+        &lt;nav&gt;
+          &lt;ul&gt;           
+            &lt;li&gt;
+              &lt;a src="url"&gt;
+                  email me
+              &lt;/a&gt;
+            &lt;li&gt;
+              &lt;a src="url"
+                    Facebook
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a src="url" 
+                  Older post
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;nav&gt;            
       </pre>
-  </main>
-  <footer>
-    <ul>
-      <li>
-        <a href="rules.html">
-          Go back to the list of rules
-        </a>
-      </li>
-      <li>
-        <a href="homepage.html">
-          Homepage
-        </a>
-      </li>
-      <li>
-        <a href="https://web.facebook.com/Prisk.roseline">
-          Facebook
-        </a>
-      </li>
-      <li>
-        <a href="mailto:roselinemarieprisca@gmail.com">
-          Feel free to email me
-        </a>
-      </li>
-    </ul>
-  </footer>
-</body>
-
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="rules.html">
+            Go back to the list of rules
+          </a>
+        </li>
+        <li>
+          <a href="homepage.html">
+            Homepage
+          </a>
+        </li>
+        <li>
+          <a href="https://web.facebook.com/Prisk.roseline">
+            Facebook
+          </a>
+        </li>
+        <li>
+          <a href="mailto:roselinemarieprisca@gmail.com">
+            Feel free to email me
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
